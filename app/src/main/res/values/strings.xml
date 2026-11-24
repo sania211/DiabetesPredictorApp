@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">DiabetesPredictorApp</string>
+    <string name="header_title">AI Diabetes Risk Predictor</string>
+    <string name="header_subtitle">Offline Neural Network Inference (TFLite)</string>
+    <string name="section_metrics">PATIENT HEALTH METRICS</string>
+    <string name="label_glucose">Plasma Glucose Level (mg/dL)</string>
+    <string name="hint_glucose">e.g. 90 or 160</string>
+    <string name="label_bmi">Body Mass Index (BMI kg/m²)</string>
+    <string name="hint_bmi">e.g. 22.0 or 33.5</string>
+    <string name="btn_predict">ANALYZE AND PREDICT RISK</string>
+    <string name="btn_clear">Reset Fields</string>
+    <string name="section_prediction">DIAGNOSTIC PREDICTION</string>
+    <string name="result_placeholder">Enter Glucose and BMI above and tap Predict</string>
+</resources>

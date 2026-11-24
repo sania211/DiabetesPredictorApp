@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#EBF1F6"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="20dp">
+
+        <!-- Top Header Banner -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="20dp"
+            android:background="#0D47A1"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/header_title"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/header_subtitle"
+                android:textSize="13sp"
+                android:textColor="#BBDEFB"
+                android:gravity="center"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+
+        <!-- Input Card (Centered & High Contrast) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="22dp"
+            android:background="@drawable/bg_card_white"
+            android:layout_marginBottom="18dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/section_metrics"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.08"
+                android:textColor="#0D47A1"
+                android:layout_marginBottom="18dp" />
+
+            <!-- Glucose Label -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_glucose"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#111827"
+                android:layout_marginBottom="6dp" />
+
+            <EditText
+                android:id="@+id/etGlucose"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:hint="@string/hint_glucose"
+                android:autofillHints="no"
+                android:textColorHint="#6B7280"
+                android:textColor="#111827"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:background="@drawable/bg_input_box"
+                android:paddingHorizontal="16dp"
+                android:layout_marginBottom="18dp" />
+
+            <!-- BMI Label -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_bmi"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#111827"
+                android:layout_marginBottom="6dp" />
+
+            <EditText
+                android:id="@+id/etBmi"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:hint="@string/hint_bmi"
+                android:autofillHints="no"
+                android:textColorHint="#6B7280"
+                android:textColor="#111827"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:background="@drawable/bg_input_box"
+                android:paddingHorizontal="16dp"
+                android:layout_marginBottom="22dp" />
+
+            <!-- Predict Button -->
+            <Button
+                android:id="@+id/btnPredict"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:text="@string/btn_predict"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:backgroundTint="#0D47A1"
+                android:textColor="#FFFFFF" />
+
+            <!-- Clear Button -->
+            <Button
+                android:id="@+id/btnClear"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:text="@string/btn_clear"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:backgroundTint="#E5E7EB"
+                android:textColor="#1F2937"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <!-- Result Card -->
+        <LinearLayout
+            android:id="@+id/cardResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="20dp"
+            android:background="@drawable/bg_card_white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/section_prediction"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.08"
+                android:textColor="#374151"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tvResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/result_placeholder"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:lineSpacingExtra="4dp"
+                android:textColor="#1F2937" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

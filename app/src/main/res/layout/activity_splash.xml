@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp"
+    android:background="#0D47A1">
+
+    <TextView
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:text="AI+"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:textColor="#0D47A1"
+        android:gravity="center"
+        android:background="@drawable/bg_circle_white"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Diabetes Risk AI"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="On-Device Clinical Risk Assessment\nPowered by TensorFlow Lite"
+        android:textSize="14sp"
+        android:textColor="#BBDEFB"
+        android:gravity="center"
+        android:lineSpacingExtra="4dp"
+        android:layout_marginBottom="40dp" />
+
+    <ProgressBar
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:indeterminateTint="#FFFFFF" />
+
+</LinearLayout>
